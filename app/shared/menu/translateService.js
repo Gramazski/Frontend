@@ -6,9 +6,9 @@ commonApp.factory('translateService',['$http', '$q', translate]);
 
 function translate($http, $q) {
     return{
-        getTranslate: function (path, locale) {
+        getTranslate: function (path) {
             var deferred = $q.defer();
-            $http({method: 'GET', url: path, params: {locale: locale, noCache: (new Date().getTime()) + Math.random()}}).
+            $http({method: 'GET', url: path, params: {noCache: (new Date().getTime()) + Math.random()}}).
             then(function(response) {
                     deferred.resolve(response.data.translateModel);
                 },

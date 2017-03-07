@@ -5,7 +5,7 @@ var crapsApp = angular.module("crapsApp");
 crapsApp.controller("mainController",['$scope', '$location', '$rootScope','translateService', control]);
 
 function control($scope, $location, $rootScope, translateService) {
-    var promiseObj=translateService.getTranslate('trans.json', 'en');
+    var promiseObj=translateService.getTranslate('lang_en.json');
     promiseObj.then(function(value) {
         $rootScope.translateModel=value;
     });

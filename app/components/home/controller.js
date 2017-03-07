@@ -13,7 +13,7 @@ function control($scope, $location) {
         });*/
     };
 
-    /*var promiseObj=translateService.getTranslate('trans1.json', 'en');
+    /*var promiseObj=translateService.getTranslate('lang_ru.json', 'en');
     promiseObj.then(function(value) {
         $scope.translateModel=value;
     });

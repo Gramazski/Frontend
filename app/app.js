@@ -27,12 +27,17 @@ angular.module('crapsApp', ["ngRoute", 'commonApp']).config(function ($routeProv
 
     $routeProvider.otherwise({redirectTo: '/'});
 }).run(function($rootScope, $location) {
+    $rootScope.loggedInUser = false;
     $rootScope.$on( "$routeChangeStart", function(event, next, current) {
-        if ($rootScope.loggedInUser == null) {
+        if ($rootScope.loggedInUser === false) {
             // no logged user, redirect to /login
-            if ( (next.templateUrl == "components/home/view.html") || (next.templateUrl == "components/login/view.html")
-                    || (next.templateUrl == "components/register/view.html")) {
-            } else {
+            if (!((next.templateUrl == "components/home/view.html") || (next.templateUrl == "components/login/view.html")
+                    || (next.templateUrl == "components/register/view.html"))) {
+                $location.path("/");
+            }
+        }
+        else {
+            if ((next.templateUrl == "components/register/view.html") || (next.templateUrl == "components/login/view.html")) {
                 $location.path("/");
             }
         }
