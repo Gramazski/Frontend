@@ -10,7 +10,7 @@
             <li ng-show="!loggedInUser"><a href="#/login"><span class="glyphicon glyphicon-user"></span> {{translateModel.menu.login}}</a> </li>
             <li class="dropdown" ng-show="loggedInUser"><a class="dropdown-toggle" data-toggle="dropdown">{{user.username}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a ng-click="translate('trans1.json', 'ru')">{{translateModel.menu.logout}}</a></li>
+                    <li><a ng-click="logout()">{{translateModel.menu.logout}}</a></li>
                     <li><a ng-click="translate('trans.json', 'en')">{{translateModel.menu.cabinet}}</a></li>
                 </ul>
             </li>

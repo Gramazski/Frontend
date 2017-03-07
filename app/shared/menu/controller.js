@@ -2,9 +2,9 @@
  * Created by gs on 28.02.2017.
  */
 var crapsApp = angular.module("crapsApp");
-crapsApp.controller("mainController",['$scope', '$location', '$rootScope','translateService', control]);
+crapsApp.controller("mainController",['$scope', '$location', '$rootScope','translateService', 'logoutService', control]);
 
-function control($scope, $location, $rootScope, translateService) {
+function control($scope, $location, $rootScope, translateService, logoutService) {
     var promiseObj=translateService.getTranslate('lang_en.json');
     promiseObj.then(function(value) {
         $rootScope.translateModel=value;
@@ -15,6 +15,11 @@ function control($scope, $location, $rootScope, translateService) {
         promiseObj.then(function(value) {
             $rootScope.translateModel=value;
         });
+    };
+
+    $scope.logout = function () {
+        logoutService.doLogout();
+        $rootScope.loggedInUser = false;
     };
 
     $scope.changePage = function () {
