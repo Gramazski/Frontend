@@ -12,16 +12,4 @@ function control($scope, $location) {
             $scope.parser=value;
         });*/
     };
-
-    /*var promiseObj=translateService.getTranslate('lang_ru.json', 'en');
-    promiseObj.then(function(value) {
-        $scope.translateModel=value;
-    });
-
-    $scope.translate = function (path, lang) {
-        var promiseObj=translateService.getTranslate(path, lang);
-        promiseObj.then(function(value) {
-            $scope.translateModel=value;
-        });
-    }*/
 }

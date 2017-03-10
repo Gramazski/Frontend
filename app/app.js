@@ -24,6 +24,30 @@ angular.module('crapsApp', ["ngRoute", 'commonApp']).config(function ($routeProv
             templateUrl: 'components/register/view.html',
             controller: 'registerController'
         });
+    $routeProvider.when('/cabinet',
+        {
+            templateUrl: 'components/cabinet/view.html',
+            controller: 'cabinetController'
+        }
+    );
+    $routeProvider.when('/cabinet/messages',
+        {
+            templateUrl: 'components/cabinet/messagesView.html',
+            controller: 'cabinetController'
+        }
+    );
+    $routeProvider.when('/cabinet/games',
+        {
+            templateUrl: 'components/cabinet/gamesView.html',
+            controller: 'cabinetController'
+        }
+    );
+    $routeProvider.when('/cabinet/transfers',
+        {
+            templateUrl: 'components/cabinet/transfersView.html',
+            controller: 'cabinetController'
+        }
+    );
 
     $routeProvider.otherwise({redirectTo: '/'});
 }).run(function($rootScope, $location) {

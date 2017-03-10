@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" ng-controller="mainController">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#/">{{translateModel.menu.brandName}}</a>
@@ -11,7 +11,7 @@
             <li class="dropdown" ng-show="loggedInUser"><a class="dropdown-toggle" data-toggle="dropdown">{{user.username}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a ng-click="logout()">{{translateModel.menu.logout}}</a></li>
-                    <li><a ng-click="translate('trans.json', 'en')">{{translateModel.menu.cabinet}}</a></li>
+                    <li><a href="#/cabinet">{{translateModel.menu.cabinet}}</a></li>
                 </ul>
             </li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" id="Language">{{translateModel.menu.lang.lang}}<span class="caret"></span></a>
