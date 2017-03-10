@@ -22,9 +22,13 @@ function control($scope, $location, userService) {
 
     $scope.changeSort = function (newParam) {
         $scope.sortParam = newParam;
-    }
+    };
 
     $scope.showMessage = function (x) {
         $scope.message = x;
-    }
+    };
+
+    $scope.showGame = function (x) {
+        $scope.game = x;
+    };
 }

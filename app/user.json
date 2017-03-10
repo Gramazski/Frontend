@@ -17,7 +17,12 @@
       {"sender" : "1", "title" : "test", "date" : "12.12.2012", "body" : "bodyyyy"},
       {"sender" : "1", "title" : "test", "date" : "12.12.2013", "body" : "bodyyyy2"},
       {"sender" : "1", "title" : "test", "date" : "12.12.2014", "body" : "bodyyyy3"}
+    ],
+    "games" : [
+      {"date" : "12.12.2012", "amount" : "1200", "change" : "-250", "lobby" : "RUSSIA", "id" : "4", "type" : "multi", "bet" : "40", "betType" : "inf"},
+      {"date" : "11.12.2012", "amount" : "12000", "change" : "1250", "lobby" : "RUSSIA2", "id" : "5", "type" : "auto", "bet" : "400", "betType" : "infr"},
+      {"date" : "15.12.2012", "amount" : "12100", "change" : "-250", "lobby" : "RUSSIA3", "id" : "6", "type" : "multi", "bet" : "40", "betType" : "inf"},
+      {"date" : "14.12.2012", "amount" : "1300", "change" : "250", "lobby" : "RUSSIA4", "id" : "7", "type" : "multi", "bet" : "40", "betType" : "inf"}
     ]
-
   }
 }

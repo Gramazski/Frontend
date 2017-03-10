@@ -35,7 +35,8 @@
       "surname" : "Enter surname",
       "email" : "Enter email",
       "repeat" : "Repeat password",
-      "title" : "Enter title"
+      "title" : "Enter title",
+      "search" : "Search"
     },
     "home" : {
       "header" : "Craps Games",
@@ -62,6 +63,15 @@
     "messages" : {
       "header" : "Messages",
       "modelheader" : "New message"
+    },
+    "games" : {
+      "header" : "Games",
+      "id" : "Game ID",
+      "lobby" : "Game lobby",
+      "date" : "Game date",
+      "type" : "Game type",
+      "bet" : "Game bet",
+      "betType" : "Bet type"
     },
     "label" : {
       "quickEnter" : "Quick Enter",
@@ -95,7 +105,11 @@
       "title" : "Title",
       "date" : "Date",
       "from" : "From",
-      "message" : "Message"
+      "message" : "Message",
+      "amount" : "Amount",
+      "change" : "Change",
+      "lobby" : "Lobby",
+      "number" : "Number"
     },
     "message" : {
       "error" : {
