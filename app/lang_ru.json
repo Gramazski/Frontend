@@ -73,6 +73,9 @@
       "bet" : "Ставка в игре",
       "betType" : "Тип ставки"
     },
+    "transfers" : {
+      "header" : "Переводы"
+    },
     "label" : {
       "quickEnter" : "Быстрый вход",
       "vkontakte" : "Вконтакте",
@@ -109,7 +112,13 @@
       "amount" : "Сумма",
       "change" : "Изменение",
       "lobby" : "Лобби",
-      "number" : "Номер"
+      "number" : "Номер",
+      "bill" : "Счет",
+      "transfer" : {
+        "type" : "Transfer type",
+        "incoming" : "Входящий",
+        "outgoing" : "Исходяший"
+      }
     },
     "message" : {
       "error" : {

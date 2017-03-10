@@ -73,6 +73,9 @@
       "bet" : "Game bet",
       "betType" : "Bet type"
     },
+    "transfers" : {
+      "header" : "Transfers"
+    },
     "label" : {
       "quickEnter" : "Quick Enter",
       "vkontakte" : "VKontakte",
@@ -109,7 +112,13 @@
       "amount" : "Amount",
       "change" : "Change",
       "lobby" : "Lobby",
-      "number" : "Number"
+      "number" : "Number",
+      "bill" : "Bill",
+      "transfer" : {
+        "type" : "Transfer type",
+        "incoming" : "Incoming",
+        "outgoing" : "Outgoing"
+      }
     },
     "message" : {
       "error" : {
