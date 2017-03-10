@@ -56,7 +56,8 @@ angular.module('crapsApp', ["ngRoute", 'commonApp']).config(function ($routeProv
         if ($rootScope.loggedInUser === false) {
             // no logged user, redirect to /login
             if (!((next.templateUrl == "components/home/view.html") || (next.templateUrl == "components/login/view.html")
-                    || (next.templateUrl == "components/register/view.html") || (next.templateUrl == "components/cabinet/view.html"))) {
+                    || (next.templateUrl == "components/register/view.html") || (next.templateUrl == "components/cabinet/view.html")
+                    || (next.templateUrl == "components/cabinet/messagesView.html"))) {
                 $location.path("/");
             }
         }

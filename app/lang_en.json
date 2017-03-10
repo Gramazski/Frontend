@@ -16,13 +16,17 @@
       "cabinet" : "Cabinet",
       "messages" : "Messages",
       "games" : "Games",
-      "transfers" : "Transfers"
+      "transfers" : "Transfers",
+      "incoming" : "Incoming",
+      "outgoing" : "Outgoing"
     },
     "button" : {
       "login" : "Login",
       "register" : "Register",
       "edit" : "Edit",
-      "submit" : "Submit"
+      "submit" : "Submit",
+      "send" : "Send",
+      "answer" : "Send answer"
     },
     "input" : {
       "username" : "Enter username",
@@ -30,7 +34,8 @@
       "name" : "Enter name",
       "surname" : "Enter surname",
       "email" : "Enter email",
-      "repeat" : "Repeat password"
+      "repeat" : "Repeat password",
+      "title" : "Enter title"
     },
     "home" : {
       "header" : "Craps Games",
@@ -53,6 +58,10 @@
         "win" : "Max win",
         "lose" : "Max lose"
       }
+    },
+    "messages" : {
+      "header" : "Messages",
+      "modelheader" : "New message"
     },
     "label" : {
       "quickEnter" : "Quick Enter",
@@ -81,7 +90,12 @@
       "added" : "Added to us!",
       "statistic" : "Statistic",
       "general" : "General",
-      "picture" : "Picture"
+      "picture" : "Picture",
+      "sender" : "Sender",
+      "title" : "Title",
+      "date" : "Date",
+      "from" : "From",
+      "message" : "Message"
     },
     "message" : {
       "error" : {

@@ -7,6 +7,17 @@
     "sex" : "Male",
     "amount" : "1000$",
     "username" : "1",
-    "password" : "2"
+    "password" : "2",
+    "inMessages" : [
+      {"sender" : "2", "title" : "test", "date" : "12.12.2012", "body" : "bodyyyy6"},
+      {"sender" : "3", "title" : "test", "date" : "12.12.2017", "body" : "bodyyyy5"},
+      {"sender" : "4", "title" : "test", "date" : "12.12.2015", "body" : "bodyyy4"}
+    ],
+    "outMessages" : [
+      {"sender" : "1", "title" : "test", "date" : "12.12.2012", "body" : "bodyyyy"},
+      {"sender" : "1", "title" : "test", "date" : "12.12.2013", "body" : "bodyyyy2"},
+      {"sender" : "1", "title" : "test", "date" : "12.12.2014", "body" : "bodyyyy3"}
+    ]
+
   }
 }
