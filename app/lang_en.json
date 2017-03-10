@@ -13,11 +13,16 @@
       "rates" : "Rates",
       "help" : "Help",
       "logout" : "Logout",
-      "cabinet" : "Cabinet"
+      "cabinet" : "Cabinet",
+      "messages" : "Messages",
+      "games" : "Games",
+      "transfers" : "Transfers"
     },
     "button" : {
       "login" : "Login",
-      "register" : "Register"
+      "register" : "Register",
+      "edit" : "Edit",
+      "submit" : "Submit"
     },
     "input" : {
       "username" : "Enter username",
@@ -38,6 +43,16 @@
       "header" : "Registration in game",
       "info" : "Info!",
       "infoMes" : "You can't change your email and login after registration."
+    },
+    "cabinet" : {
+      "header" : "Personal",
+      "modelheader" : "Edit data",
+      "table" : {
+        "date" : "Register date",
+        "amount" : "Max amount",
+        "win" : "Max win",
+        "lose" : "Max lose"
+      }
     },
     "label" : {
       "quickEnter" : "Quick Enter",
@@ -63,7 +78,10 @@
       "repeat" : "Repeat password",
       "serAgr" : "Register in service you accept",
       "agreement" : "User agreement",
-      "added" : "Added to us!"
+      "added" : "Added to us!",
+      "statistic" : "Statistic",
+      "general" : "General",
+      "picture" : "Picture"
     },
     "message" : {
       "error" : {

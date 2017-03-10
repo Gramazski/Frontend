@@ -1,5 +1,11 @@
 {
   "user" : {
+    "avatar" : "assets/img/user/cube.jpg",
+    "name" : "test",
+    "surname" : "Test",
+    "birthday" : "19.12.2000",
+    "sex" : "Male",
+    "amount" : "1000$",
     "username" : "1",
     "password" : "2"
   }
