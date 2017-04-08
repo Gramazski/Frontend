@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9c05ca-7382-4b14-9bc6-9b52aea869a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/igralnaya-kost-animatsionnaya-kartinka-0024.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/igralnaya-kost-animatsionnaya-kartinka-0073.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/igralnaya-kost-animatsionnaya-kartinka-0091.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/table1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/table2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/craps/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/game/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/result/controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/result/view.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/controller.js" afterPath="$PROJECT_DIR$/app/components/login/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/loginService.js" afterPath="$PROJECT_DIR$/app/components/login/loginService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/login/view.html" afterPath="$PROJECT_DIR$/app/components/login/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/register/controller.js" afterPath="$PROJECT_DIR$/app/components/register/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/register/registerService.js" afterPath="$PROJECT_DIR$/app/components/register/registerService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/register/view.html" afterPath="$PROJECT_DIR$/app/components/register/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang_en.json" afterPath="$PROJECT_DIR$/app/lang_en.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang_ru.json" afterPath="$PROJECT_DIR$/app/lang_ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/menu/controller.js" afterPath="$PROJECT_DIR$/app/shared/menu/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/shared/menu/view.html" afterPath="$PROJECT_DIR$/app/shared/menu/view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/common.js" afterPath="$PROJECT_DIR$/game/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/controller.js" afterPath="$PROJECT_DIR$/game/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/index.html" afterPath="$PROJECT_DIR$/game/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,18 +33,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="437">
+              <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#area#0;n#map#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -94,8 +66,8 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="48" column="48" lean-forward="false" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="375">
+              <caret line="90" column="79" lean-forward="false" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -155,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="54" column="65" lean-forward="false" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+            <state relative-caret-position="85">
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -229,10 +201,10 @@
         <option value="$PROJECT_DIR$/app/components/home/view.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/game/app.js" />
-        <option value="$PROJECT_DIR$/game/controller.js" />
-        <option value="$PROJECT_DIR$/game/common.js" />
-        <option value="$PROJECT_DIR$/game/index.html" />
         <option value="$PROJECT_DIR$/game/directive.js" />
+        <option value="$PROJECT_DIR$/game/controller.js" />
+        <option value="$PROJECT_DIR$/game/index.html" />
+        <option value="$PROJECT_DIR$/game/common.js" />
       </list>
     </option>
   </component>
@@ -573,7 +545,7 @@
       <workItem from="1489231753647" duration="5536000" />
       <workItem from="1489423251978" duration="1093000" />
       <workItem from="1489566450883" duration="176000" />
-      <workItem from="1491653602907" duration="17999000" />
+      <workItem from="1491653602907" duration="27451000" />
     </task>
     <task id="LOCAL-00001" summary="Login on view added. Menu showing added. Footer and menu views added.">
       <created>1488918833934</created>
@@ -624,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489173850693</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Game visual added. Resizibg working.">
+      <created>1491673575306</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491673575306</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114400000" />
+    <option name="totallyTimeSpent" value="123852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -668,7 +647,8 @@
     <MESSAGE value="Messages view added. Message view, sorting and creating added." />
     <MESSAGE value="Games view added. Search for messages and games added." />
     <MESSAGE value="Transfers view added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Transfers view added." />
+    <MESSAGE value="Game visual added. Resizibg working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game visual added. Resizibg working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,28 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/cabinet/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="54" column="65" lean-forward="false" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -941,10 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game/controller.js">
+    <entry file="file://$PROJECT_DIR$/game/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="48" column="48" lean-forward="false" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
@@ -961,19 +923,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="90" column="79" lean-forward="false" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="437">
+          <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#area#0;n#map#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

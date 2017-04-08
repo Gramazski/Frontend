@@ -5,48 +5,147 @@ var crapsApp = angular.module("crapsApp");
 crapsApp.controller("gameController",['$scope', control]);
 
 function control($scope) {
-    $scope.betsPosSt = [
+    $scope.betsPos = [
         {
             "shape" : "rect",
-            "coords" : [0.29, 0.22, 0.37, 0.31],
-            "width" : 0.05
+            "coordsSt" : [0.29, 0.22, 0.37, 0.31],
+            "coords" : [],
+            "widthSt" : 0.05,
+            "width" : 0,
+            "type" : "4"
         },
         {
             "shape" : "rect",
-            "coords" : [0.37, 0.22, 0.44, 0.31],
-            "width" : 0.05
+            "coordsSt" : [0.37, 0.22, 0.44, 0.31],
+            "coords" : [],
+            "widthSt" : 0.05,
+            "width" : 0,
+            "type" : "5"
         },
         {
             "shape" : "rect",
-            "coords" : [0.44, 0.22, 0.51, 0.31],
-            "width" : 0.05
+            "coordsSt" : [0.44, 0.22, 0.51, 0.31],
+            "coords" : [],
+            "widthSt" : 0.05,
+            "width" : 0,
+            "type" : "six"
         },
         {
             "shape" : "rect",
-            "coords" : [0.51, 0.22, 0.59, 0.31],
-            "width" : 0.05
+            "coordsSt" : [0.51, 0.22, 0.59, 0.31],
+            "coords" : [],
+            "widthSt" : 0.05,
+            "width" : 0,
+            "type" : "8"
         }
     ];
 
-    $scope.betsPos = [];
+    $scope.betting = {
+        "isMakeBet" : false,
+        "isRemoveBet" : false,
+        "amount" : 0
+    };
 
-    for (var i = 0; i < $scope.betsPosSt.length; i++){
-        $scope.betsPos[i] = {};
-        $scope.betsPos[i].shape = $scope.betsPosSt[i].shape;
-        $scope.betsPos[i].coords = [];
-        $scope.betsPos[i].width = {};
-    }
-    commonModule.setAreaWidth($scope.betsPos, $scope.betsPosSt);
+    $scope.game = {};
+    //for test
+    $scope.game.min = 1;
+    $scope.game.max = 10;
+    $scope.bets = [];
+    $scope.history = [];
+
+    commonModule.setAreaWidth($scope.betsPos, $scope.bets);
+
+    $scope.setBet = function () {
+        $scope.betting.isMakeBet = true;
+        $scope.betting.isRemoveBet = false;
+    };
+
+    var addToHistory = function (action, descr, result, type) {
+        var historyAction = {};
+        historyAction.action = action;
+        historyAction.descr = descr;
+        historyAction.result = result;
+        historyAction.type = type;
+
+        $scope.history.push(historyAction);
+    };
 
     $scope.makeBet = function (bet) {
-        var xBet = bet.coords[0] + Math.round((bet.coords[2] - bet.coords[0] - bet.width) / 2) + bet.width;
-        var yBet = bet.coords[1] + Math.round((bet.coords[3] - bet.coords[1] - bet.width) / 2);
+        if ($scope.betting.isMakeBet && $scope.addNewBetToList(bet)){
+            addToHistory("Make bet", bet.type, bet.amount, "make");
+        }
 
-        commonModule.setBet(xBet, yBet, bet.width);
+        if ($scope.betting.isRemoveBet){
+            $scope.removeBet(bet.type);
+        }
+    };
+
+    $scope.setRemovingBet = function () {
+        $scope.betting.isMakeBet = false;
+        $scope.betting.isRemoveBet = true;
+    };
+
+    $scope.removeBet = function (type) {
+        for (var i = 0; i < $scope.bets.length; i++){
+            if ($scope.bets[i].type == type){
+                addToHistory("Disable bet", $scope.bets[i].type, $scope.bets[i].amount, "disable");
+                $scope.bets.splice(i, 1);
+                commonModule.removeBet(type);
+                $scope.betting.isRemoveBet = false;
+
+                return true;
+            }
+        }
+
+        return false;
+    };
+
+    $scope.removeAll = function () {
+        for (var i = 0; i < $scope.bets.length; ){
+            $scope.betting.isRemoveBet = true;
+            if (!$scope.removeBet($scope.bets[i].type)){
+                i = 1;
+            }
+        }
     };
 
     $scope.changeAreaCoords = function () {
-        commonModule.setAreaWidth($scope.betsPos, $scope.betsPosSt);
+        commonModule.setAreaWidth($scope.betsPos, $scope.bets);
+    };
+
+    $scope.addNewBetToList = function (bet) {
+        var added = false;
+        for (var i = 0; i < $scope.bets.length; i++){
+            if (bet.type == $scope.bets[i].type){
+                if ($scope.bets[i].amount + $scope.betting.amount <= $scope.game.max){
+                    $scope.bets[i].amount += $scope.betting.amount;
+                    added = true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+
+        if (!added){
+            var xBet = bet.coords[0] + Math.round((bet.coords[2] - bet.coords[0] - bet.width) / 2) + bet.width;
+            var yBet = bet.coords[1] + Math.round((bet.coords[3] - bet.coords[1] - bet.width) / 2);
+
+            commonModule.setBet(xBet, yBet, bet.width, bet.type);
+
+            bet.position = {
+                "x" : bet.coordsSt[0] + Math.round((bet.coordsSt[2] - bet.coordsSt[0] - bet.widthSt) / 2) + bet.widthSt,
+                "y" : bet.coordsSt[1] + Math.round((bet.coordsSt[3] - bet.coordsSt[1] - bet.widthSt) / 2),
+                "width" : bet.widthSt
+            };
+
+            bet.amount = $scope.betting.amount;
+
+            $scope.bets.push(bet);
+        }
+        $scope.betting.isMakeBet = false;
+
+        return true;
     };
 
 }
