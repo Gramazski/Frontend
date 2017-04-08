@@ -6,17 +6,39 @@ crapsApp.factory('loginService',['$http', '$q', login]);
 
 function login($http, $q) {
     return{
-        checkLogin: function (data) {
+        checkLogin: function (login, password) {
             var deferred = $q.defer();
-            $http({method: 'GET', url: 'user.json', params: data}).
+            $http({
+                method: 'POST',
+                url: '/controller?command=LOGIN',
+                headers: {
+                    'Content-Type': 'json'
+                },
+                data: { userName: login, password: password }
+            }).
             then(function(response) {
-                    deferred.resolve(response.data.user);
+                    deferred.resolve(response.data);
                 },
                 function(response) {
                     deferred.reject(response.status);
                 });
 
             return deferred.promise;
+        },
+        createUser : function (value) {
+            var user = {};
+            user.id = value.id;
+            user.password = value.password;
+            user.username = value.userName;
+            user.email = value.email;
+            user.amount = value.amount;
+            user.win_amount = value.win_amount;
+            user.avatar = value.avatar;
+            user.name = value.name;
+            user.surname = value.surname;
+            user.create_time = value.create_time;
+
+            return user;
         }
     }
 }

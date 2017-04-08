@@ -6,17 +6,17 @@ crapsApp.controller('loginController', ['$scope', '$rootScope', '$location', 'lo
 
 function control($scope, $rootScope, $location, loginService) {
     $scope.login = function () {
-        var user = {};
-        user.username = $scope.username;
-        user.password = $scope.password;
-        var promiseObj=loginService.checkLogin(user);
+        var promiseObj=loginService.checkLogin($scope.username, $scope.password);
         promiseObj.then(function(value) {
-            if (value === null){
-
+            if (value.id < 0){
+                console.dir(value);
+                $scope.username = "";
+                $scope.password = "";
             }
             else {
                 $rootScope.loggedInUser = true;
-                $rootScope.user = value;
+                $rootScope.user = loginService.createUser(value);
+                console.dir($rootScope.user);
                 $location.path("#/");
             }
         });

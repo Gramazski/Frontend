@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="#/">{{translateModel.menu.brandName}}</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a ng-click="changePage()" id="TestLogin">{{translateModel.menu.result}}</a></li>
+            <li ng-show="loggedInUser"><a href="#/">{{translateModel.menu.result}}</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li ng-show="!loggedInUser"><a href="#/login"><span class="glyphicon glyphicon-user"></span> {{translateModel.menu.login}}</a> </li>

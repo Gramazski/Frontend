@@ -20,9 +20,6 @@ function control($scope, $location, $rootScope, translateService, logoutService)
     $scope.logout = function () {
         logoutService.doLogout();
         $rootScope.loggedInUser = false;
-    };
-
-    $scope.changePage = function () {
-        $location.path("result");
+        $location("/");
     };
 }
