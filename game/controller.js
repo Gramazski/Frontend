@@ -52,12 +52,37 @@ function control($scope) {
     $scope.game.max = 10;
     $scope.bets = [];
     $scope.history = [];
+    $scope.throwing = false;
 
     commonModule.setAreaWidth($scope.betsPos, $scope.bets);
+
+    $scope.showAnimate = function () {
+        $scope.throwing = true;
+        commonModule.showAnimate();
+    };
+
+    $scope.hideAnimate = function () {
+        commonModule.hideAnimate();
+        $scope.throwing = false;
+        $scope.$apply();
+        commonModule.showThrowingResult();
+        $scope.onFallenNumber();
+    };
+
+    $scope.throwCubes = function () {
+        $scope.showAnimate();
+
+        setTimeout($scope.hideAnimate, 2300);
+    };
 
     $scope.setBet = function () {
         $scope.betting.isMakeBet = true;
         $scope.betting.isRemoveBet = false;
+    };
+
+    $scope.onFallenNumber = function () {
+        addToHistory("Cubes fallen", "number", "win", "win");
+
     };
 
     var addToHistory = function (action, descr, result, type) {
